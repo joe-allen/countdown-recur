@@ -17,6 +17,8 @@
  *  debug: false,                         // This stops the time in order to help update the css
  *  endDay: 'Sunday',                     // End day for timer, defaults to "Sunday"
  *  endTime: '11:59:59 pm',               // End time for timer, defaults to "11:59:59 pm", Format like '05:05:20 pm'
+ *  startDate: '04/25/2018',              // Set today's date (!important - must set otherwise countdown will not end)
+ *  weeksToRecur: 1                       // Set number of weeks countdown should recur, defaults to 4 weeks
  *
  * @return
  *   init(), html with countdown timer.
