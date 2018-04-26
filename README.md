@@ -12,10 +12,13 @@ To use this plugin you need these dependencies:
 - [MomentTimeZone](https://momentjs.com/timezone/) (.5.14 or greater)
 
 ### Installation
+```html
+<div id="countdown_timer"></div>
+```
 ```javascript
 $('#countdown_timer').countdown_timer({
-	startDate: '04/25/2018',
-	weeksToRecur: 4
+startDate: '04/25/2018',
+weeksToRecur: 4
 });
 ```
 
@@ -34,9 +37,10 @@ $('#countdown_timer').countdown_timer({
 ```
 
 #### Things to remember
-```javascript
-  // - If startDate is set before today's date/time it will still function. Keep in mind, it will continue to run the number of weeks set in `weeksToRecur` after that of the `startDate`
-  // - For the least amount of timer down time, it's recommended to use an `endTime` of "11:59:59 pm", because the countdown stops on the `endDay` after `endTime` and won't pick back up the next day at 12:00:00am.
+```bash
+- If startDate is set before today's date/time it will still function. Keep in mind, it will continue to run the number of weeks set in `weeksToRecur` after that of the `startDate`.
+
+- For the least amount of timer down time, it's recommended to use an `endTime` of "11:59:59 pm", because the countdown stops on the `endDay` after `endTime` and won't pick back up the next day at 12:00:00am.
 ```
 
 #### ToDo
