@@ -1,0 +1,7 @@
+- Need to test in different time zones
+- Timezone plugin (https://momentjs.com/docs/#/parsing/parse-zone/)
+
+HIde clock, show 00000:00
+
+
+- Right now if the timer is set for Sunday @ 11:59:59 pm it will only be closed for 1 second. It will restart Monday at 12:00:00 am. If set for Sunday @ 06:00:00 pm it will be closed for 6 hrs and will restart at 12:00:00 am on Monday.

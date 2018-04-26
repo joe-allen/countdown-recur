@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no--js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Recur</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div id="countdown_timer" class="flex-center"></div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+
+    <script src="node_modules/moment/min/moment.min.js"></script>
+    <script src="node_modules/moment-recur/moment-recur.js"></script>
+    <script src="node_modules/moment-timezone/builds/moment-timezone-with-data-2012-2022.js"></script>
+    <script src="js/countdown-recur.js"></script>
+
+    <script>
+      // Call timer
+      $('#countdown_timer').countdown_timer({
+        debug: false,                         // This stops the time in order to update the css
+        color: 'green',                       // Color of timer, defaults to green
+        endDay: 'Sunday',                     // End day for timer, defaults to "Sunday"
+        endTime: '11:59:59 pm',               // End time for timer, defaults to "11:59:59 pm", Format like '05:05:20 pm'
+        deadlineText: "Sorry, time's up!",    // Text to show user after timer ends
+        startDate: '04/25/2018',              // Set today's date (!important - must set otherwise countdown will not end)
+        weeksToRecur: 1                       // Set number of weeks countdown should recur, defaults to 4 weeks
+      });
+    </script>
+  </body>
+</html>
