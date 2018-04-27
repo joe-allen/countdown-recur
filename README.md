@@ -44,5 +44,5 @@ For the least amount of timer down time, it's recommended to use an `endTime` of
 
 #### ToDo
 
-- [ ] Add countdown time fx :metal:
+- [ ] Add countdown sound fx :metal:
 
