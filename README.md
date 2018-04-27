@@ -33,7 +33,7 @@ $('#countdown_timer').countdown_timer({
   textColor: 'green',                   // Color of timer text, defaults to green
   endDay: 'Sunday',                     // End day for timer, defaults to "Sunday"
   endTime: '11:59:59 pm',               // End time for timer, defaults to "11:59:59 pm", Format like '05:05:20 pm'
-  deadlineText: "Sorry, time's up",     // Text to show user after timer ends
+  endTimeText: "Sorry, time's up",      // Text to show user after timer ends
 ```
 
 #### Things to remember
