@@ -31,9 +31,9 @@ $('#countdown_timer').countdown_timer({
   // Optional settings:
   debug: false,                         // This stops the time in order to update the css
   textColor: 'green',                   // Color of timer text, defaults to green
-  endDay: 'Friday',                     // End day for timer, defaults to "Sunday"
-  endTime: '05:00:01 pm',               // End time for timer, defaults to "11:59:59 pm", Format like '05:05:20 pm'
-  deadlineText: "Are you still working?!",    // Text to show user after timer ends
+  endDay: 'Sunday',                     // End day for timer, defaults to "Sunday"
+  endTime: '11:59:59 pm',               // End time for timer, defaults to "11:59:59 pm", Format like '05:05:20 pm'
+  deadlineText: "Sorry, time's up",     // Text to show user after timer ends
 ```
 
 #### Things to remember
@@ -44,5 +44,5 @@ For the least amount of timer down time, it's recommended to use an `endTime` of
 
 #### ToDo
 
-[] - Test
+- [ ] Add countdown time fx :metal:
 
