@@ -1,2 +1,5 @@
+# ignore these folders
 node_modules/
+
+# ignore these files
 package-lock.json
