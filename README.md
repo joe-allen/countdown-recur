@@ -2,6 +2,8 @@
 
 **A jQuery plugin for a weekly countdown timer which easily allows for the customization of start date, end time and number of weeks to repeat.**
 
+*(The timer also takes into account the timezone of the user).*
+
 ## Dependencies
 
 To use this plugin you need these dependencies:
