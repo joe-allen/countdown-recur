@@ -13,7 +13,7 @@
  *
  * @augments
  *  textColor: 'green',                   // Color of timer text, defaults to green
- *  deadlineText: "Sorry, time's up!",    // Text to show user after timer ends
+ *  endTimeText: "Sorry, time's up!",     // Text to show user after timer ends
  *  debug: false,                         // This stops the time in order to help update the css
  *  endDay: 'Sunday',                     // End day for timer, defaults to "Sunday"
  *  endTime: '11:59:59 pm',               // End time for timer, defaults to "11:59:59 pm", Format like '05:05:20 pm'
@@ -31,10 +31,10 @@
     // properties
     var settings = $.extend({
       deadline: '',
-      deadlineText: "Sorry, this event has expired.",
       debug: false,
       endDay: 'Sunday',
       endTime: '11:59:59 pm',
+      endTimeText: "Sorry, this event has expired.",
       isBeforeDeadline: false,
       nextDeadline: '',
       now: '',
@@ -185,7 +185,7 @@
         } else {
 
           // Time has ended. return element with "Time's up" text
-          return $el.html('<div class="clock_content_container"><div id="times_up" class="text">'+settings.deadlineText+'</div></div>'
+          return $el.html('<div class="clock_content_container"><div id="times_up" class="text">'+settings.endTimeText+'</div></div>'
             + '<span id="seconds_progress--js" class="countdown_progress"></span>'
           );
         }
