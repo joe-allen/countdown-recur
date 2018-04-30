@@ -185,7 +185,7 @@
         } else {
 
           // Time has ended. return element with "Time's up" text
-          return $el.html('<div class="clock_content_container"><div id="times_up" class="text">'+settings.endTimeText+'</div></div>'
+          return $el.html('<div class=""><div id="times_up" class="text">'+settings.endTimeText+'</div></div>'
             + '<span id="seconds_progress--js" class="countdown_progress"></span>'
           );
         }
