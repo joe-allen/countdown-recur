@@ -12,19 +12,19 @@
 
     <div id="countdown_timer" class="flex-center"></div>
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <script src="node_modules/moment/min/moment.min.js"></script>
-    <script src="node_modules/moment-recur/moment-recur.js"></script>
-    <script src="node_modules/moment-timezone/builds/moment-timezone-with-data-2012-2022.js"></script>
-    <script src="js/countdown-recur.js"></script>
+    <script src="https://d13p2xj50zkyqm.cloudfront.net/scripts/moment.js"></script>
+    <script src="https://d13p2xj50zkyqm.cloudfront.net/scripts/moment-recur.min.js"></script>
+    <script src="https://d13p2xj50zkyqm.cloudfront.net/scripts/moment-timezone-with-data.min.js"></script>
+    <script src="https://d13p2xj50zkyqm.cloudfront.net/scripts/countdown-recur.min.js"></script>
 
     <script>
       // Call timer
       $('#countdown_timer').countdown_timer({
         debug: false,                         // This stops the time in order to update the css
         color: 'green',                       // Color of timer, defaults to green
-        endDay: 'Sunday',                     // End day for timer, defaults to "Sunday"
+        endDay: 'Monday',                     // End day for timer, defaults to "Sunday"
         endTime: '11:59:59 pm',               // End time for timer, defaults to "11:59:59 pm", Format like '05:05:20 pm'
         endTimeText: "Sorry, time's up!",     // Text to show user after timer ends
         startDate: '04/25/2018',              // Set today's date (!important - must set otherwise countdown will not end)
