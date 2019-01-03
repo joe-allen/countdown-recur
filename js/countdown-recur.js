@@ -79,6 +79,7 @@
         // store a week from now to see if now and the recur date are equal
         var isToday = moment().add(7, 'd').format('MM/DD/YYYY');
 
+
         // loop over settings.recurDay array
         for(i=0; i<settings.recurDay.length; i++) {
 
@@ -95,8 +96,13 @@
             }
           }
 
+          // format dates in order to compare them
+          var nextDate = new Date(settings.recurDay[i] +' '+ settings.endTime);
+          var nowsDate = new Date(settings.now.format('MM/DD/YYYY') +' '+ settings.endTime);
+          var deadlineHasBeenMet = (nextDate >= nowsDate) ? true : false;
+
           // check that deadline is in future
-          if(settings.recurDay[i] +' '+ settings.endTime >= settings.now.format('MM/DD/YYYY') +' '+ settings.endTime) {
+          if(deadlineHasBeenMet) {
 
             // return next deadline and exit loop
             return settings.deadline = settings.recurDay[i] +' '+ settings.endTime;
@@ -208,6 +214,7 @@
         settings.now = (typeof(userTimeZone) != undefined || typeof(userTimeZone) != null)
           ? moment.tz(userTimeZone)
           : moment();
+
 
         settings.recurDay = moment(settings.startDate).recur()
           .every([(options.endDay != null) ? options.endDay : "Sunday"]).daysOfWeek()
